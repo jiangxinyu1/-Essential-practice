@@ -6,17 +6,21 @@ using namespace std;
 
 
 vector<int >  pentagonal (int );
-void print_v(const vector<int> &v , const string & title , ostream &os  = cout );
+//该函数的最后一个参数有默认值
+void print_v(const vector<int> &v , const string &title , ostream &os  = cout );
+
 
 int main(int argc, const char** argv) 
 {
     int size ;
     string title = "The pentagonal is  ";
+    //以输出模式开启文件
     fstream outfile ("write_numbers.txt");
     cout << "Input the size :"<< endl;
     cin >> size;
+    //以默认的cout作为第三个参数
+    //print_v(pentagonal(size), title);
     print_v(pentagonal(size), title,outfile);
-
     return 0; 
 }
 
@@ -45,7 +49,7 @@ vector<int> pentagonal(int num_elem)
 /*
     print a vector
  */
-void print_v(const vector<int> & v ,  const string &title,  ostream& os )
+void print_v(const vector<int> &v ,  const string &title,  ostream &os )
 {
     if(v.size()==0 )
     {
