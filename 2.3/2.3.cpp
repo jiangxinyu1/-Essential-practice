@@ -86,7 +86,7 @@ void print_v(const vector<int> &v, const string &title, ostream &os)
     {
         if (!os)
         {
-            cerr << "open the file failed" << endl;
+            cerr << "open the file failed" << endl;  
         }
         os << title << endl;
         for (int j = 0; j < v.size(); ++j)
