@@ -1,0 +1,8 @@
+在2.4的基础上，增加了两个函数
+display函数：采用iterator遍历vector
+display_plus函数：在display的基础上采用了函数模板
+
+tips：两点注意，
+当我们的vector用了ｃｏｎｓｔ修饰的情况下，不可更改，要用const_iterator来遍历。
+还有就是函数模板的用法
+
