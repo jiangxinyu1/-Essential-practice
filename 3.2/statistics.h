@@ -16,7 +16,7 @@ class Less_Than {
 public:
     bool operator()(const string &s1, const string &s2)
     {
-        if( s1.size()<s2.size() )
+        if( s1.size() < s2.size() )
         {
             return true;
         }
